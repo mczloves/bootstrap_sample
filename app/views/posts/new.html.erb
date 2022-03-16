@@ -1,14 +1,2 @@
 <h1>好きなキャラ投稿</h1>
-<%= form_with model: @post, local: true do |form| %>
-  <div>
-    <%= form.label :title, "推しキャラ" %>
-    <%= form.text_field :title %>
-  </div>
-  <div>
-    <%= form.label :content, "なぜ推すのか？" %>
-    <%= form.text_field :content %>
-  </div>
-  <div>
-    <%= form.submit "投稿" %>
-  </div>
-<% end %>
+<%= render 'form', button_value: '投稿' %>
